@@ -14,6 +14,7 @@ async function main(){
   app.use(express.json())
   app.use(express.urlencoded({extended: false}))
   app.listen(3000)
+  app.use(multimediaRoutes)
   console.log("Server listening on port 3000")
 }
 
